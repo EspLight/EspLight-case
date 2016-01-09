@@ -52,8 +52,14 @@ mirror([0,1,0]){
     translate([thickness+thickness+Espdepth, thickness+Espdepth-ScrewBorder-8, EspHeight-ScrewDepth]) screw();
 
     //print support
+    //vertical
     translate([-ScrewBorder-ScrewBorder-8, 0, 0]) cube([1.6,8+ScrewBorder+ScrewBorder,EspHeight-ScrewDepth], 0);
     translate([-ScrewBorder-ScrewBorder-8, Espwidth-8, 0]) cube([1.6,8+ScrewBorder+ScrewBorder,EspHeight-ScrewDepth], 0);
     translate([Espdepth+ScrewBorder+ScrewBorder+8+thickness+thickness-1.6, 0, 0]) cube([1.6,8+ScrewBorder+ScrewBorder,EspHeight-ScrewDepth], 0);
     translate([Espdepth+ScrewBorder+ScrewBorder+8+thickness+thickness-1.6, Espwidth-8, 0]) cube([1.6,8+ScrewBorder+ScrewBorder,EspHeight-ScrewDepth], 0);
+    //horizontal
+    translate([-ScrewBorder-ScrewBorder-8-4, 0, 0]) cube([10,8+ScrewBorder+ScrewBorder,1], 0);
+    translate([-ScrewBorder-ScrewBorder-8-4, Espwidth-8, 0]) cube([10,8+ScrewBorder+ScrewBorder,1], 0);
+    translate([Espdepth+ScrewBorder+ScrewBorder+8+thickness+thickness-1.6-4, 0, 0]) cube([10,8+ScrewBorder+ScrewBorder,1], 0);
+    translate([Espdepth+ScrewBorder+ScrewBorder+8+thickness+thickness-1.6-4, Espwidth-8, 0]) cube([10,8+ScrewBorder+ScrewBorder,1], 0);
 }
